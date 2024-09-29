@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Weather Application</title>
+  </head>
+  <body
+    class="bg-gray-900 text-white flex flex-col justify-center items-center"
+  >
+    <div class="bg-black w-full h-24 flex items-center justify-center">
+      <h1 class="text-2xl font-bold">WEATHER APPLICATION</h1>
+    </div>
+    <div class="w-full flex flex-col justify-center mt-10 p-4 md:w-2/5">
+      <div class="flex">
+        <input
+          type="text"
+          id="search_text"
+          placeholder="Search City"
+          class="p-3 w-full bg-gray-700 rounded-2xl rounded-tr-none rounded-br-none focus:outline-none"
+        />
+        <button class="bg-blue-500 p-3 focus:outline-none" id="find_btn">
+          Find
+        </button>
+      </div>
+
+      <div class="text-center p-4">OR</div>
+      <div class="text-center p-3 font-bold text-2xl">
+        <div class="w-full flex justify-center">
+          <h4 class="bg-gray-700 rounded-2xl md:w-2/4">Use Current Location</h4>
+        </div>
+      </div>
+    </div>
+    <div
+      class="w-full bg-black h-36 flex flex-col mt-12 justify-evenly gap-24 p-2 md:flex-row md:flex-wrap"
+    >
+      <div class="flex flex-col">
+        <div class="mt-3 mb-3" id="day">Day</div>
+          <div class="mt-3 mb-3" id="city">City</div>
+          <div class="flex flex-col gap-10 mt-6 mb-6">
+            <div class="font-bold text-2xl">
+              Temp: <span id="tempmain"></span>
+            </div>
+            <div>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqe3rIhRUGgxADdREHnrnTiweWl07iMN5Nxw&s"
+                class="h-20"
+              />
+            </div>
+          </div>
+          <div><h4>Humidity :</h4> <span id="humidity"></span></div>
+            <div><h4>Air :</h4><span id="wind_kph"></span></div>
+      </div>
+      <div class="flex flex-col justify-between">
+        <div>Day</div>
+        <div>Temperture</div>
+      </div>
+      <div class="flex flex-col justify-between">
+        <div>Day</div>
+        <div>Temperture</div>
+      </div>
+      <div class="flex flex-col justify-between">
+        <div>Day</div>
+        <div>Temperture</div>
+      </div>
+      <div class="flex flex-col justify-between">
+        <div>Day</div>
+        <div>Temperture</div>
+      </div>
+      <div class="flex flex-col justify-between">
+        <div>Day</div>
+        <div>Temperture</div>
+      </div>
+    </div>
+    <script src="weather.js"></script>
+  </body>
+</html>
